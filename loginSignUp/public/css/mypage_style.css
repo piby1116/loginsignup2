@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #556b2f;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f5f5dc;
+  background-color: #45523f;
+}
+
+.logo {
+  text-align: center;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 80%;
+  height: auto;
+}
+
+.brand-name {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.mainContent {
+  margin-left: 200px;
+  padding: 20px;
+  background-color: #ffffff;
+  width: calc(100% - 200px);
+}
+
+#profileSection, #fundraiserSection, #donationHistorySection, #walletSection {
+  display: none;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border: 1px solid #556b2f;
+  border-radius: 8px;
+}
+
+#profilePicPreview {
+  max-width: 150px; /* 최대 너비를 150px로 설정 */
+  max-height: 150px; /* 최대 높이를 150px로 설정 */
+  width: auto;  /* 원본 이미지의 비율을 유지하며 너비 자동 조절 */
+  height: auto; /* 원본 이미지의 비율을 유지하며 높이 자동 조절 */
+  border-radius: 50%; /* 이미지를 원형으로 표시 */
+  display: block; /* 이미지를 블록 요소로 표시 */
+  margin: 10px auto; /* 상하 10px, 좌우 자동 마진으로 중앙 정렬 */
+}
+
+button, input[type="file"], input[type="text"] {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #556b2f;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.block-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.block-button:hover {
+  background-color: #45a049;
+}
+
+

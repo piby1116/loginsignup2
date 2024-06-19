@@ -1,0 +1,19 @@
+body {
+    background-color: darkolivegreen;
+    color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 50px; /* 상단에 공간 추가 */
+    font-family: Arial, sans-serif;
+}
+
+video {
+    margin: 20px 0;
+}
+
+button {
+    cursor: pointer;
+}

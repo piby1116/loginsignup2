@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link rel="stylesheet" href="mypage_style.css"> <!-- Ensure the correct path to your CSS file -->
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo" title="Givernance">
+        </div>
+        <a href="#" id="profileMenu">Profile</a>
+        <a href="#" id="fundraiserMenu">My Fundraisers</a>
+        <a href="#" id="donationMenu">Donation History</a>
+        <a href="#" id="walletMenu">Wallet</a>
+    </div>
+
+    <div class="mainContent">
+        <section id="profileSection" style="display: none;">
+            <h2>Profile</h2>
+            <div>
+                <label for="nicknameInput">Nickname:</label>
+                <input type="text" id="nicknameInput" placeholder="Enter your nickname">
+                <button onclick="updateNickname()">Update Nickname</button>
+            </div>
+            <div>
+                <label for="profilePicUpload">Profile Picture:</label>
+                <input type="file" id="profilePicUpload" accept="image/*">
+                <button onclick="uploadProfilePic()">Upload Picture</button>
+                <img id="profilePicPreview" src="#" alt="Profile Picture Preview" style="display: none; max-width: 200px; max-height: 200px;">
+            </div>
+        </section>
+
+        <section id="fundraiserSection" style="display: none;">
+            <h2>My Fundraisers</h2>
+            <ul id="myFundraisersList">
+                <!-- Dynamic content will be loaded here -->
+            </ul>
+        </section>
+
+        <section id="donationHistorySection" style="display: none;">
+            <h2>Donation History</h2>
+            <ul id="donationHistoryList">
+                <!-- Dynamic content will be loaded here -->
+            </ul>
+        </section>
+
+        <section id="walletSection">
+            <h2>Wallet</h2>
+            <button id="connectWallet">Connect MetaMask Wallet</button>
+            <p id="walletAddressDisplay">No wallet connected</p>
+        </section>
+    </div>
+
+    <script src="js/mypage.js"></script>
+</body>
+</html>

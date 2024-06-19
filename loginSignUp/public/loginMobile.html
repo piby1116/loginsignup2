@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up - Face Recognition</title>
+    <link rel="stylesheet"  href="css/style_mobile.css">
+    <script defer src="js/face-api.min.js"></script>
+   
+    <script defer src="js/loginMobile.js"></script>
+</head>
+<body>
+<h1>Login with Face Recognition</h1>
+<video id="video" width="600" height="450" autoplay playsinline></video>
+<button id="startVerification">Start Verification</button>
+<button id="stopVerification">Stop Verification</button>
+<script>
+document.getElementById('verify').addEventListener('click', function() {
+  const savedDescriptor = JSON.parse(localStorage.getItem("savedDescriptor"));
+  ws.send(JSON.stringify({ type: 'verifyLogin', savedDescriptor: savedDescriptor }));
+});
+</script>
+</body>
